@@ -17,44 +17,57 @@
   <body class="body">
     <!-- upper section(top line) -->
     <header class="header">
-      <nav class="main-nav-panel">
-        <a class="logo first-half" href="./index.html"
-          >web <span class="logo second-half">studio</span></a
-        >
-        <ul class="list">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="./blank.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <!-- contact list -->
-      <address class="contacts">
-        <a class="button" href="mailto:info@devstudio.com"
-          ><img
-            src="./images/envelop-contact-icon.svg"
-            alt="Конверт"
-          />info@devstudio.com
-        </a>
-        <a class="button" href="tel:+380961111111">
-          <img src="./images/smartphone-contact-icon.svg" alt="Телефон" />+38
-          096 111 11 11</a
-        >
-      </address>
+      <div class="container">
+        <nav class="main-nav-panel">
+          <a class="logo first-half" href="./index.html"
+            >web <span class="logo second-half">studio</span></a
+          >
+          <ul class="list">
+            <li class="list-item">
+              <a class="link link-selected" href="./index.html">Студия</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="./blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- contact list -->
+        <address class="contacts">
+          <a class="button" href="mailto:info@devstudio.com"
+            ><img
+              class="contact-image"
+              src="./images/envelop-contact-icon.svg"
+              alt="Конверт"
+            />
+            <span class="contact-title">info@devstudio.com</span>
+          </a>
+          <a class="button" href="tel:+380961111111">
+            <img
+              class="contact-image"
+              src="./images/smartphone-contact-icon.svg"
+              alt="Телефон"
+            />
+            <span class="contact-title">+38 096 111 11 11</span></a
+          >
+        </address>
+      </div>
     </header>
     <!-- middle main section -->
     <main>
       <div>
-        <!-- <img
-          aria-label="hero-background-image"
-          src=""
-          alt="Изображение рабочего процесса, нотбук на столе"
-        /> -->
         <section class="hero">
-          <h1 class="title">
-            эффективные решения<br />
-            для вашего бизнеса
-          </h1>
-          <a class="button" href="./blank.html">Заказать услугу</a>
+          <div class="container">
+            <h1 class="title">
+              эффективные решения<br />
+              для вашего бизнеса
+            </h1>
+            <a class="button" href="./blank.html"
+              ><span class="button-title">Заказать услугу</span></a
+            >
+          </div>
         </section>
       </div>
       <!-- feature list section -->
@@ -62,7 +75,7 @@
         <h2 class="lable">Список преимуществ</h2>
         <!-- feature list -->
         <ul class="list">
-          <li>
+          <li class="list-item">
             <a class="link" href="./blank.html">
               <img
                 class="link-img"
@@ -76,7 +89,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="list-item">
             <a class="link" href="./blank.html">
               <img
                 class="link-img"
@@ -90,7 +103,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="list-item">
             <a class="link" href="./blank.html"
               ><img
                 class="link-img"
@@ -103,7 +116,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="list-item">
             <a href="./blank.html"
               ><img
                 class="link-img"
@@ -122,26 +135,32 @@
       <section class="performance">
         <h2 class="lable">Чем мы занимаемся</h2>
         <ul class="list">
-          <li>
+          <li class="list-item">
             <img
               src="./images/note-what-we-do-img.jpg"
               alt="Открытый ноутбук"
             />
-            <h3 class="title">Десктопные приложения</h3>
+            <h3 class="title">
+              <span class="title-item">Десктопные приложения</span>
+            </h3>
           </li>
-          <li>
+          <li class="list-item">
             <img
               src="./images/phone-what-we-do-img.jpg"
               alt="Приложение на смартфон"
             />
-            <h3 class="title">Мобильные приложения</h3>
+            <h3 class="title">
+              <span class="title-item">Мобильные приложения</span>
+            </h3>
           </li>
-          <li>
+          <li class="list-item">
             <img
               src="./images/screen-what-we-do-img.jpg"
               alt="Монитор с рисунком"
             />
-            <h3 class="title">Дизайнерские решения</h3>
+            <h3 class="title">
+              <span class="title-item">Дизайнерские решения</span>
+            </h3>
           </li>
         </ul>
       </section>
@@ -149,340 +168,386 @@
       <section class="employees">
         <h2 class="lable">Наша команда</h2>
         <!-- our team list -->
-        <ul class="list">
-          <li>
-            <!-- teammate image -->
-            <img
-              src="./images/john-smith-photo.jpg"
-              alt="Фото участника нашей команды"
-            />
-            <!-- name -->
-            <p lang="en" class="name">John Smith</p>
-            <!-- position -->
-            <p lang="en" class="description">Product Designer</p>
-            <!-- social pages list -->
-            <ul class="list">
+        <div class="container">
+          <ul class="list">
+            <li class="item">
+              <!-- teammate image -->
+              <img
+                src="./images/john-smith-photo.jpg"
+                alt="Фото участника нашей команды"
+              />
+              <!-- name -->
+              <p lang="en" class="name">John Smith</p>
+              <!-- position -->
+              <p lang="en" class="description">Product Designer</p>
               <!-- social pages list -->
-              <li>
-                <a
-                  aria-label="ссылка на инстанрамм данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/instagram-icon.svg"
-                    alt="ссылка на инстанрамм данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на твиттер данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/twitter-icon.svg"
-                    alt="ссылка на твиттер данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на фейсбук данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/facebook-icon.svg"
-                    alt="ссылка на фейсбук данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на линкедин данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/linkedin-icon.svg"
-                    alt="ссылка на линкедин данного сотрудника"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/marta-stewart-photo.jpg"
-              alt="Фото участника нашей команды"
-            />
-            <!-- name -->
-            <p lang="en" class="name">Marta Stewart</p>
-            <!-- position -->
-            <p lang="en" class="description">Frontend Developer</p>
-            <!-- social pages list -->
-            <ul class="list">
+              <ul class="social-list">
+                <!-- social pages list -->
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на инстанрамм данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/instagram-icon.svg"
+                      alt="ссылка на инстанрамм данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на твиттер данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/twitter-icon.svg"
+                      alt="ссылка на твиттер данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на фейсбук данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/facebook-icon.svg"
+                      alt="ссылка на фейсбук данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на линкедин данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/linkedin-icon.svg"
+                      alt="ссылка на линкедин данного сотрудника"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="./images/marta-stewart-photo.jpg"
+                alt="Фото участника нашей команды"
+              />
+              <!-- name -->
+              <p lang="en" class="name">Marta Stewart</p>
+              <!-- position -->
+              <p lang="en" class="description">Frontend Developer</p>
               <!-- social pages list -->
-              <li>
-                <a
-                  aria-label="ссылка на инстанрамм данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/instagram-icon.svg"
-                    alt="ссылка на инстанрамм данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на твиттер данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/twitter-icon.svg"
-                    alt="ссылка на твиттер данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на фейсбук данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/facebook-icon.svg"
-                    alt="ссылка на фейсбук данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на линкедин данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/linkedin-icon.svg"
-                    alt="ссылка на линкедин данного сотрудника"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/robert-jakis-photo.jpg"
-              alt="Фото участника нашей команды"
-            />
-            <!-- name -->
-            <p lang="en" class="name">Robert Jakis</p>
-            <!-- position -->
-            <p lang="en" class="description">Marketing</p>
-            <ul class="list">
-              <!-- social pages list -->
-              <li>
-                <a
-                  aria-label="ссылка на инстанрамм данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/instagram-icon.svg"
-                    alt="ссылка на инстанрамм данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на твиттер данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/twitter-icon.svg"
-                    alt="ссылка на твиттер данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на фейсбук данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/facebook-icon.svg"
-                    alt="ссылка на фейсбук данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на линкедин данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/linkedin-icon.svg"
-                    alt="ссылка на линкедин данного сотрудника"
-                /></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/martin-doe.jpg"
-              alt="Фото участника нашей команды"
-            />
-            <!-- name -->
-            <p lang="en" class="name">Martin Doe</p>
-            <!-- position -->
-            <p lang="en" class="description">UI Designer</p>
-            <ul class="list">
-              <!-- social pages list -->
-              <li>
-                <a
-                  aria-label="ссылка на инстанрамм данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/instagram-icon.svg"
-                    alt="ссылка на инстанрамм данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на твиттер данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/twitter-icon.svg"
-                    alt="ссылка на твиттер данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на фейсбук данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/facebook-icon.svg"
-                    alt="ссылка на фейсбук данного сотрудника"
-                /></a>
-              </li>
-              <li>
-                <a
-                  aria-label="ссылка на линкедин данного сотрудника"
-                  href="./blank.html"
-                  ><img
-                    class="link"
-                    src="./images/linkedin-icon.svg"
-                    alt="ссылка на линкедин данного сотрудника"
-                /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              <ul class="social-list">
+                <!-- social pages list -->
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на инстанрамм данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/instagram-icon.svg"
+                      alt="ссылка на инстанрамм данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на твиттер данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/twitter-icon.svg"
+                      alt="ссылка на твиттер данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на фейсбук данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/facebook-icon.svg"
+                      alt="ссылка на фейсбук данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на линкедин данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/linkedin-icon.svg"
+                      alt="ссылка на линкедин данного сотрудника"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="./images/robert-jakis-photo.jpg"
+                alt="Фото участника нашей команды"
+              />
+              <!-- name -->
+              <p lang="en" class="name">Robert Jakis</p>
+              <!-- position -->
+              <p lang="en" class="description">Marketing</p>
+              <ul class="social-list">
+                <!-- social pages list -->
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на инстанрамм данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/instagram-icon.svg"
+                      alt="ссылка на инстанрамм данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на твиттер данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/twitter-icon.svg"
+                      alt="ссылка на твиттер данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на фейсбук данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/facebook-icon.svg"
+                      alt="ссылка на фейсбук данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на линкедин данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/linkedin-icon.svg"
+                      alt="ссылка на линкедин данного сотрудника"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="./images/martin-doe.jpg"
+                alt="Фото участника нашей команды"
+              />
+              <!-- name -->
+              <p lang="en" class="name">Martin Doe</p>
+              <!-- position -->
+              <p lang="en" class="description">UI Designer</p>
+              <ul class="social-list">
+                <!-- social pages list -->
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на инстанрамм данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/instagram-icon.svg"
+                      alt="ссылка на инстанрамм данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на твиттер данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/twitter-icon.svg"
+                      alt="ссылка на твиттер данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на фейсбук данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/facebook-icon.svg"
+                      alt="ссылка на фейсбук данного сотрудника"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="social-link"
+                    aria-label="ссылка на линкедин данного сотрудника"
+                    href="./blank.html"
+                    ><img
+                      class="link"
+                      src="./images/linkedin-icon.svg"
+                      alt="ссылка на линкедин данного сотрудника"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- our clients section -->
       <section class="clients">
-        <h2 class="lable">Постоянные клиенты</h2>
-        <ul class="list">
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+        <div class="container">
+          <h2 class="lable">Постоянные клиенты</h2>
+          <ul class="clients-list">
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo1.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo1.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo2.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo2.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo3.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo3.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo4.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo4.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo5.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a aria-label="Логотип нашего клиента" href="./blank.html"
-              ><img
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo5.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+            <li class="item">
+              <a
                 class="link"
-                src="./images/logo6.svg"
-                alt="Логотип нашего клиента"
-            /></a>
-          </li>
-        </ul>
+                aria-label="Логотип нашего клиента"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/logo6.svg"
+                  alt="Логотип нашего клиента"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo first-half" href="./index.html">
-        web <span class="logo second-half">studio</span>
-      </a>
-      <address class="contacts">
-        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-        <a class="link" href="mailto:info@example.com">info@example.com</a>
-        <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
-      <section class="call">
-        <h2 class="title"><b>присоединяйтесь</b></h2>
-        <ul class="list">
-          <!-- social pages list -->
-          <li>
-            <a
-              class="link"
-              aria-label="ссылка на инстанрамм нашей компании"
-              href="./blank.html"
-              ><img
-                class="link-img"
-                src="./images/instagram2.svg"
-                alt="ссылка на инстанрамм"
-            /></a>
-          </li>
-          <li>
-            <a
-              class="link"
-              aria-label="ссылка на твиттер нашей компании"
-              href="./blank.html"
-              ><img
-                class="link-img"
-                src="./images/twitter2.svg"
-                alt="ссылка на твиттер"
-            /></a>
-          </li>
-          <li>
-            <a
-              class="link"
-              aria-label="ссылка на фейсбук нашей компании"
-              href="./blank.html"
-              ><img
-                class="link-img"
-                src="./images/facebook2.svg"
-                alt="ссылка на фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a
-              class="link"
-              aria-label="ссылка на линкедин нашей компании"
-              href="./blank.html"
-              ><img
-                class="link-img"
-                src="./images/linkedin2.svg"
-                alt="ссылка на линкедин"
-            /></a>
-          </li>
-        </ul>
-        <p class="title"><b>Подпишитесь на рассылку</b></p>
-        <a class="button" href="./blank.html">Подписаться</a>
-      </section>
+      <div class="container">
+        <div class="left-container">
+          <a class="logo first-half" href="./index.html">
+            web <span class="logo second-half">studio</span>
+          </a>
+          <address class="contacts">
+            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <section class="call">
+          <h2 class="title"><b>присоединяйтесь</b></h2>
+          <ul class="list">
+            <!-- social pages list -->
+            <li>
+              <a
+                class="link"
+                aria-label="ссылка на инстанрамм нашей компании"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/instagram2.svg"
+                  alt="ссылка на инстанрамм"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="link"
+                aria-label="ссылка на твиттер нашей компании"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/twitter2.svg"
+                  alt="ссылка на твиттер"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="link"
+                aria-label="ссылка на фейсбук нашей компании"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/facebook2.svg"
+                  alt="ссылка на фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="link"
+                aria-label="ссылка на линкедин нашей компании"
+                href="./blank.html"
+                ><img
+                  class="link-img"
+                  src="./images/linkedin2.svg"
+                  alt="ссылка на линкедин"
+              /></a>
+            </li>
+          </ul>
+          <div class="right-container">
+            <p class="title"><b>Подпишитесь на рассылку</b></p>
+            <a class="button" href="./blank.html"
+              ><span class="call-button-title">Подписаться</span></a
+            >
+          </div>
+        </section>
+      </div>
       <p class="copyrights">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
