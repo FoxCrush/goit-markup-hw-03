@@ -7,6 +7,7 @@
   --description-text-color: #757575;
   --footer-dark-grey-text-color: rgba(255, 255, 255, 0.4);
 }
+
 h1,
 h2,
 h3,
@@ -258,7 +259,6 @@ ul {
   margin: auto;
 }
 .employees {
-  margin-top: 95px;
   padding-top: 95px;
   padding-bottom: 95px;
   background-color: var(--secondary-bgc-grey);
@@ -330,12 +330,15 @@ ul {
 .employees .link:focus {
   background-color: var(--focused-color);
 }
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .clients .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 .clients .lable {
-  margin-top: 95px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -376,11 +379,10 @@ ul {
   background-color: var(--footer-bgc);
 }
 .footer .container {
-  margin: 94px auto 0px auto;
   min-width: 1200px;
-  padding: 50px 200px 20px 200px;
+  padding: 48px 200px 20px 200px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer .logo.second-half {
@@ -403,7 +405,8 @@ ul {
   margin-left: 180px;
   margin-top: 10px;
 }
-.call .title {
+.call .title,
+.call .title b {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -446,6 +449,7 @@ ul {
   margin-bottom: 9px;
 }
 .left-container {
+  min-width: 235px;
   text-align: left;
 }
 .left-container .contacts {
