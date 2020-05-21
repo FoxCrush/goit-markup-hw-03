@@ -23,19 +23,17 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 .body {
   background-color: var(--main-bgc-white);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
-
-  max-width: 1600px;
 }
 .link {
   color: var(--prime-text-color);
@@ -142,8 +140,9 @@ ul {
 .hero {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+  padding-left: 15px;
+  padding-right: 15px;
 
-  max-width: 1600px;
   min-height: 600px;
   text-align: center;
 }
@@ -185,7 +184,7 @@ ul {
 .feature {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 94px 0;
+  padding: 94px 15px;
   border-bottom: 1px solid #ececec;
 }
 .feature .lable {
@@ -292,10 +291,12 @@ ul {
 .employees .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .employees .list {
   display: flex;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .employees .social-list {
   list-style: none;
@@ -354,6 +355,8 @@ ul {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .clients .container {
   max-width: 1200px;
@@ -524,13 +527,14 @@ ul {
 }
 /* porfolio */
 .examples {
-  max-width: 1200px;
   padding-top: 95px;
   padding-bottom: 94px;
 }
 .examples .container {
   max-width: 1200px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .button-container .list > li:not(:nth-last-child(-n + 1)) {
   margin-right: 8px;
@@ -577,6 +581,9 @@ ul {
   list-style: none;
 }
 
+.preview-container .projects p {
+  margin: 0px;
+}
 .preview-container .projects {
   display: flex;
   flex-wrap: wrap;
@@ -584,10 +591,14 @@ ul {
 
 .projects .item {
   min-width: calc((100% - 60px) / 3);
-  padding-bottom: 20px;
-  border-radius: 4px;
-  overflow: hidden;
+  max-width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
+
+  overflow: hidden;
+}
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 .projects .item:nth-child(3n) {
   margin-right: 0px;
@@ -608,7 +619,7 @@ ul {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 
-  margin: 20px 24px 5px 24px;
+  padding: 20px 24px 5px 24px;
 }
 .projects .type {
   font-weight: 400;
@@ -617,5 +628,18 @@ ul {
   /* identical to box height, or 187% */
   color: #757575;
 
-  margin: 0px 24px 0px 24px;
+  padding: 0px 24px 20px 24px;
+}
+.projects .list {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
